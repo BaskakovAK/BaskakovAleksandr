@@ -114,13 +114,16 @@ section h2 {
   line-height: 40px;
   margin: 0;
   margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.main-text h2 {
+  margin-left: 0;
 }
 
 header {
   background-color: #222;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
   width: 100%;
 }
 
@@ -266,11 +269,12 @@ button {
 }
 
 .main {
-  width: 850px;
+  width: 900px;
   margin: 130px auto;
   display: flex;
   gap: 30px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .main img {
@@ -281,6 +285,7 @@ button {
 
 .main-text {
   height: 280px;
+  width: 410px;
   margin: auto 0;
 }
 
@@ -330,6 +335,7 @@ button {
 .about-me-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .autobio {
@@ -338,6 +344,7 @@ button {
   padding: 20px;
   border-radius: 25px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
 .skills {
@@ -477,6 +484,7 @@ button {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -492,6 +500,7 @@ button {
   height: 40px;
   width: 150px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
 .contact-buttons a img {

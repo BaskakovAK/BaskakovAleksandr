@@ -1,0 +1,80 @@
+@media (max-width: 1320px) {
+  nav,
+  .about-me,
+  .portfolio,
+  .contacts,
+  .footer-container {
+    width: 1000px;
+  }
+
+  .autobio,
+  .skills {
+    width: 960px;
+  }
+}
+
+@media (max-width: 1100px) {
+  nav,
+  .about-me,
+  .portfolio,
+  .contacts,
+  .footer-container {
+    width: 760px;
+  }
+
+  .autobio,
+  .skills {
+    width: 720px;
+  }
+}
+
+@media (max-width: 1100px) {
+  nav,
+  .about-me,
+  .portfolio,
+  .contacts,
+  .footer-container {
+    width: 760px;
+  }
+
+  .autobio,
+  .skills {
+    width: 720px;
+  }
+
+  .main {
+    width: 720px;
+    justify-content: center;
+  }
+
+  .main-buttons {
+    justify-content: center;
+  }
+
+  .main-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 760px) {
+  nav,
+  .about-me,
+  .portfolio,
+  .contacts,
+  .footer-container {
+    width: 520px;
+  }
+
+  .autobio,
+  .skills {
+    width: 490px;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  .main {
+    width: 490px;
+  }
+}
