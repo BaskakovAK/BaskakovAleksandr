@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link type="Image/x-icon" href="img/favicon.png" rel="icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <title>The Collector</title>
+  </head>
+  <body>
+    <h1>The Collector</h1>
+    <div class="field">
+      <div class="burrow"></div>
+      <div class="hedgehog"></div>
+      <div class="apple"></div>
+    </div>
+    <div class="message-window">
+      <p class="message">
+        Hi! Help the hedgehog get ready for winter and pick apples.
+      </p>
+    </div>
+    <div class="points">
+      <p class="stock">0</p>
+      <p class="inventory">(0)</p>
+      <img src="img/apple.png" width="50" />
+    </div>
+    <div class="keyboard">
+      <button class="pick-button" type="button">pick up</button>
+      <button class="up-button" type="button">
+        <img src="img/arrow_up.png" width="50" />
+      </button>
+      <button class="give-button" type="button">give</button>
+      <button class="left-button" type="button">
+        <img src="img/arrow_left.png" width="50" />
+      </button>
+      <button class="down-button" type="button">
+        <img src="img/arrow_down.png" width="50" />
+      </button>
+      <button class="right-button" type="button">
+        <img src="img/arrow_right.png" width="50" />
+      </button>
+    </div>
+    <div class="coord">
+      <p>X:</p>
+      <p class="x">0</p>
+      <p>|Y:</p>
+      <p class="y">0</p>
+    </div>
+    <div class="coord-apple">
+      <p>X:</p>
+      <p class="x-apple">0</p>
+      <p>|Y:</p>
+      <p class="y-apple">0</p>
+    </div>
+    <div class="learning">
+      <div class="text-window">
+        <h2>Welcome to "The Collector"!</h2>
+        <p>
+          The goal of the game is to help the hedgehog prepare for winter and
+          collect as many apples as possible for himself and his family.<br />You
+          can play with both keyboard and mouse
+        </p>
+        <div class="keys">
+          <div class="card">
+            <div>
+              <img src="img/arrow_up.png" width="50" height="50" />
+            </div>
+            <p>Go up.</p>
+          </div>
+          <div class="card">
+            <div>
+              <img src="img/arrow_left.png" width="50" height="50" />
+            </div>
+            <p>Go left.</p>
+          </div>
+          <div class="card">
+            <div>
+              <img src="img/arrow_down.png" width="50" height="50" />
+            </div>
+            <p>Go down.</p>
+          </div>
+          <div class="card">
+            <div>
+              <img src="img/arrow_right.png" width="50" height="50" />
+            </div>
+            <p>Go right.</p>
+          </div>
+          <div class="card">
+            <div><p>Z</p></div>
+            <p>Pick up apple</p>
+          </div>
+          <div class="card">
+            <div><p>X</p></div>
+            <p>Give apple</p>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="close-learning">
+        <img src="img/red_cross.png" width="30" />
+      </button>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
