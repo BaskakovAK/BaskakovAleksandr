@@ -596,3 +596,7 @@ footer {
 .footer-container a:active {
   opacity: 0.5;
 }
+
+.game {
+  font-style: none;
+}

@@ -28,28 +28,29 @@ let appleY = 0;
 let inventory = 0;
 let stock = 0;
 const appleHitBox = 40;
+const step = 7.5;
 //
 //
 //
 //
 //
 const moveUp = function () {
-  x -= 40;
+  x -= step;
   hedgehog.style.top = x + "px";
 };
 
 const moveDown = function () {
-  x += 40;
+  x += step;
   hedgehog.style.top = x + "px";
 };
 
 const moveLeft = function () {
-  y -= 40;
+  y -= step;
   hedgehog.style.left = y + "px";
 };
 
 const moveRight = function () {
-  y += 40;
+  y += step;
   hedgehog.style.left = y + "px";
 };
 
@@ -188,7 +189,7 @@ closeButton.onclick = function () {
 //
 //
 //
-addEventListener("keyup", function (event) {
+addEventListener("keydown", function (event) {
   if (event.code === "ArrowUp") {
     if (x >= 120) {
       if (inventory <= 0) {
@@ -250,6 +251,11 @@ addEventListener("keyup", function (event) {
       inventory <= 0
     ) {
       getApple();
+      console.log(hedgehog.style.backgroundImage);
+      if (hedgehog.style.backgroundImage === "img/hog_right.png") {
+        hedgehog.style.backgroundImage = "img/hog_right_apple.png";
+        console.log(hedgehog.style.backgroundImage);
+      }
       message.textContent = "Apple getted!";
       spawnApple();
     } else if (

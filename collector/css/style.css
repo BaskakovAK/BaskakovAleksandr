@@ -76,6 +76,7 @@ button:active {
   position: absolute;
   top: 250px;
   left: 900px;
+  visibility: hidden;
 }
 
 .not-button {
@@ -100,7 +101,7 @@ button:active {
   width: 80px;
   top: 180px;
   left: 70px;
-  transition: top 0.2s, left 0.2s;
+  /*transition: top 0.1s, left 0.1s;*/
   z-index: 3;
 }
 
