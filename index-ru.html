@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,7 +30,7 @@
         <ul class="theme-switch">
           <li><button class="light-theme" type="button"></button></li>
           <li><button class="dark-theme active" type="button"></button></li>
-          <li><a href="index.html" class="lang">Ru</a></li>
+          <li><a href="index.html" class="lang">Ру</a></li>
         </ul>
       </nav>
     </header>
@@ -84,7 +84,7 @@
               <div class="progress-bar js"></div>
             </li>
             <li>
-              <h3>Availability:</h3>
+              <h3>Adaptive:</h3>
               <div class="progress-bar av"></div>
             </li>
             <li>
@@ -98,7 +98,24 @@
         <h2>Портфолио</h2>
         <ul class="works-list">
           <li>
-            <img src="img/sail-club.png" alt="Project screenshot" width="305" />
+            <img src="img/Collector.png" alt="Project screenshot" width="305" />
+            <div>
+              <h3>Fun projects</h3>
+
+              <p>Небольшие проекты, сделанные ради веселья.</p>
+              <button type="button" class="fun-projects--open-button">
+                Открыть
+              </button>
+            </div>
+          </li>
+          <li>
+            <div>
+              <img
+                src="img/sail-club.png"
+                alt="Project screenshot"
+                width="305"
+              />
+            </div>
             <h3>Яхт клуб</h3>
 
             <p>
@@ -108,6 +125,25 @@
             <a href="sail-club-new/index.html" target="_blank">Открыть</a>
           </li>
         </ul>
+        <div class="fun-projects">
+          <h3>Fun projects</h3>
+          <button type="button" class="fun-projects--close-button"></button>
+          <ul class="works-list">
+            <li>
+              <img
+                src="img/Collector.png"
+                alt="Project screenshot"
+                width="305"
+              />
+              <div>
+                <h3>Собиратель</h3>
+
+                <p>Простая игра про ежа, который собирает яблоки.</p>
+                <a href="collector/index.html" target="_blank">Открыть</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="contacts" id="contacts">
         <h2>Контакты</h2>
@@ -163,9 +199,10 @@
         <a href="mailto:baskakov.aleksandr@internet.ru"
           >baskakov.aleksandr@internet.ru</a
         >
-        <p>&copy; 2022 Баскаков Александр</p>
+        <p>&copy; 2023 Баскаков Александр</p>
       </div>
     </footer>
     <script src="theme.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

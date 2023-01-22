@@ -1,0 +1,142 @@
+header {
+  background-color: #222;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+nav {
+  width: 1300px;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.logo img {
+  display: block;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #d5d5d5;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+}
+
+.menu a:active {
+  opacity: 0.5;
+}
+
+.theme-switch {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.theme-switch button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.light-theme {
+  display: block;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../img/sun-light.svg");
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.light-theme:hover {
+  opacity: 0.5;
+}
+
+.light-theme:active {
+  opacity: 0.3;
+}
+
+.light-theme.active {
+  background-image: url("../img/sun-light.svg");
+  background-color: rgba(0, 124, 237, 1);
+}
+
+.dark-theme {
+  display: block;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background-image: url("../img/moon-light.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dark-theme:hover {
+  opacity: 0.5;
+}
+
+.dark-theme:active {
+  opacity: 0.3;
+}
+
+.dark-theme.active {
+  background-image: url("../img/moon-light.svg");
+  background-color: rgba(0, 124, 237, 1);
+}
+
+.lang {
+  display: flex;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #d5d5d5;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.lang:hover {
+  opacity: 0.5;
+}
+
+.lang:active {
+  opacity: 0.3;
+}

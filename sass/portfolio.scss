@@ -1,0 +1,122 @@
+.portfolio {
+  width: 1300px;
+  margin: 0 auto 80px auto;
+}
+
+.works-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.works-list li div {
+  border-radius: 20px;
+  height: 200px;
+  margin-bottom: 20px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+.works-list img {
+  border-radius: 20px;
+  display: block;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.works-list li h3 {
+  font-size: 27px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.works-list li p {
+  margin: 0;
+  width: 305px;
+  margin-bottom: 30px;
+}
+
+.works-list li {
+  width: 345px;
+  background-color: #333;
+  border-radius: 25px;
+  padding: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.works-list a,
+.fun-projects--open-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgba(0, 124, 237, 1);
+  color: #d5d5d5;
+  text-decoration: none;
+  background-color: #333;
+  border-radius: 30px;
+  height: 40px;
+  width: 150px;
+  margin: auto auto 0 auto;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fun-projects--open-button {
+  height: 46px;
+  width: 160px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.works-list a:hover {
+  opacity: 0.7;
+}
+
+.works-list a:active {
+  opacity: 0.5;
+}
+
+.works-list h3,
+.works-list p {
+  text-align: center;
+  margin: 0 auto auto auto;
+}
+
+.fun-projects {
+  width: 1200px;
+  background-color: #333;
+  border-radius: 30px;
+  position: absolute;
+  top: 1100px;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  display: none;
+}
+
+.fun-projects li {
+  background-color: #444;
+}
+
+.fun-projects h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px auto 50px auto;
+}
+
+.fun-projects--close-button {
+  background-color: transparent;
+  background-image: url("../img/close_button.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

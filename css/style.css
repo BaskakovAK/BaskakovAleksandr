@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  transition: background-color 0.5s;
 }
 
 body {
@@ -10,104 +11,6 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
-/*theme control*/
-.light {
-  background-color: #d5d5d5;
-  color: #222;
-}
-
-.light header {
-  background-color: #d5d5d5;
-}
-
-.light .autobio,
-.light .skills,
-.light .works-list li {
-  background-color: #acacac;
-}
-
-.light .menu li a,
-.light .footer-container a {
-  color: #222;
-}
-
-.light .light-theme,
-.light .dark-theme {
-  border: 1px solid #222;
-}
-
-.light .light-theme {
-  background-image: url("../img/sun.svg");
-}
-
-.light .dark-theme {
-  background-image: url("../img/moon.svg");
-}
-
-.light .avatar {
-  border: 15px solid #acacac;
-}
-
-.light .main-text h1 {
-  color: #6a6a6a;
-}
-.light .html {
-  background-color: rgba(0, 124, 237, 1);
-}
-
-.light .css {
-  background: linear-gradient(
-    to right,
-    rgba(0, 124, 237, 1) 80%,
-    transparent 80%
-  );
-}
-
-.light .js {
-  background: linear-gradient(
-    to right,
-    rgba(0, 124, 237, 1) 40%,
-    transparent 40%
-  );
-}
-
-.light .av {
-  background: linear-gradient(
-    to right,
-    rgba(0, 124, 237, 1) 20%,
-    transparent 20%
-  );
-}
-
-.light .fw {
-  background: linear-gradient(
-    to right,
-    rgba(0, 124, 237, 1) 10%,
-    transparent 10%
-  );
-}
-
-.light .progress-bar {
-  border: 2px solid #acacac;
-}
-
-.light .main-buttons a {
-  background-color: #acacac;
-  color: #222;
-  border: 3px solid #333;
-}
-
-.light .works-list li a {
-  background-color: rgba(0, 124, 237, 1);
-  border: 3px solid #333;
-}
-
-.light .contact-buttons li a {
-  background-color: #acacac;
-  color: #222;
-  border: 3px solid #333;
-}
-/*theme control*/
 
 section h2 {
   font-size: 35px;
@@ -117,8 +20,8 @@ section h2 {
   margin-left: 30px;
 }
 
-.main-text h2 {
-  margin-left: 0;
+button {
+  cursor: pointer;
 }
 
 header {
@@ -135,10 +38,6 @@ nav {
   align-items: center;
   font-size: 14px;
   line-height: 18px;
-}
-
-button {
-  cursor: pointer;
 }
 
 .logo {
@@ -213,7 +112,7 @@ button {
 
 .light-theme.active {
   background-image: url("../img/sun-light.svg");
-  background-color: rgba(0, 124, 237, 1);
+  background-color: rgb(0, 124, 237);
 }
 
 .dark-theme {
@@ -240,7 +139,7 @@ button {
 
 .dark-theme.active {
   background-image: url("../img/moon-light.svg");
-  background-color: rgba(0, 124, 237, 1);
+  background-color: rgb(0, 124, 237);
 }
 
 .lang {
@@ -266,6 +165,10 @@ button {
 
 .lang:active {
   opacity: 0.3;
+}
+
+.main-text h2 {
+  margin-left: 0;
 }
 
 .main {
@@ -316,7 +219,7 @@ button {
 }
 
 .main-buttons a:first-child {
-  border: 3px solid rgba(0, 124, 237, 1);
+  border: 3px solid rgb(0, 124, 237);
 }
 
 .main-buttons a:hover {
@@ -374,7 +277,7 @@ button {
 
 .progress-bar {
   border: 2px solid #333;
-  box-shadow: 0 0 0 1px rgba(0, 124, 237, 1);
+  box-shadow: 0 0 0 1px rgb(0, 124, 237);
   box-sizing: border-box;
   border-radius: 10px;
   width: 350px;
@@ -385,23 +288,23 @@ button {
 }
 
 .html {
-  background-color: rgba(0, 124, 237, 1);
+  background-color: rgb(0, 124, 237);
 }
 
 .css {
-  background: linear-gradient(to right, rgba(0, 124, 237, 1) 80%, #333 80%);
+  background: linear-gradient(to right, rgb(0, 124, 237) 80%, #333 80%);
 }
 
 .js {
-  background: linear-gradient(to right, rgba(0, 124, 237, 1) 40%, #333 40%);
+  background: linear-gradient(to right, rgb(0, 124, 237) 70%, #333 70%);
 }
 
 .av {
-  background: linear-gradient(to right, rgba(0, 124, 237, 1) 20%, #333 20%);
+  background: linear-gradient(to right, rgb(0, 124, 237) 40%, #333 40%);
 }
 
 .fw {
-  background: linear-gradient(to right, rgba(0, 124, 237, 1) 10%, #333 10%);
+  background: linear-gradient(to right, rgb(0, 124, 237) 30%, #333 30%);
 }
 
 .portfolio {
@@ -414,7 +317,16 @@ button {
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 20px;
+}
+
+.works-list li div {
+  border-radius: 20px;
+  height: 200px;
+  margin-bottom: 20px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
 }
 
 .works-list img {
@@ -427,7 +339,7 @@ button {
 .works-list li h3 {
   font-size: 27px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .works-list li p {
@@ -445,19 +357,27 @@ button {
   box-sizing: border-box;
 }
 
-.works-list a {
+.works-list a,
+.fun-projects--open-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid rgba(0, 124, 237, 1);
+  border: 3px solid rgb(0, 124, 237);
   color: #d5d5d5;
   text-decoration: none;
   background-color: #333;
   border-radius: 30px;
   height: 40px;
   width: 150px;
-  margin: 0 auto;
+  margin: auto auto 0 auto;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.fun-projects--open-button {
+  height: 46px;
+  width: 160px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 .works-list a:hover {
@@ -471,7 +391,43 @@ button {
 .works-list h3,
 .works-list p {
   text-align: center;
-  margin: 0;
+  margin: 0 auto auto auto;
+}
+
+.fun-projects {
+  width: 1200px;
+  background-color: #333;
+  border-radius: 30px;
+  position: absolute;
+  top: 1100px;
+  left: 50%;
+  transform: translate(-50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  display: none;
+}
+
+.fun-projects li {
+  background-color: #444;
+}
+
+.fun-projects h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px auto 50px auto;
+}
+
+.fun-projects--close-button {
+  background-color: transparent;
+  background-image: url("../img/close_button.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .contacts {
@@ -597,6 +553,158 @@ footer {
   opacity: 0.5;
 }
 
-.game {
-  font-style: none;
+.light {
+  background-color: #d5d5d5;
+  color: #222;
 }
+
+.light header {
+  background-color: #d5d5d5;
+}
+
+.light .autobio,
+.light .skills,
+.light .works-list li {
+  background-color: #acacac;
+}
+
+.light .menu li a,
+.light .footer-container a,
+.light .lang {
+  color: #222;
+}
+
+.light .light-theme,
+.light .dark-theme,
+.light .lang {
+  border: 1px solid #222;
+}
+
+.light .light-theme {
+  background-image: url("../img/sun.svg");
+}
+
+.light .dark-theme {
+  background-image: url("../img/moon.svg");
+}
+
+.light .avatar {
+  border: 15px solid #acacac;
+}
+
+.light .main-text h1 {
+  color: #6a6a6a;
+}
+
+.light .html {
+  background-color: rgb(0, 124, 237);
+}
+
+.light .css {
+  background: linear-gradient(to right, rgb(0, 124, 237) 80%, transparent 80%);
+}
+
+.light .js {
+  background: linear-gradient(to right, rgb(0, 124, 237) 70%, transparent 70%);
+}
+
+.light .av {
+  background: linear-gradient(to right, rgb(0, 124, 237) 40%, transparent 40%);
+}
+
+.light .fw {
+  background: linear-gradient(to right, rgb(0, 124, 237) 30%, transparent 30%);
+}
+
+.light .progress-bar {
+  border: 2px solid #acacac;
+}
+
+.light .main-buttons a {
+  background-color: #acacac;
+  color: #222;
+  border: 3px solid #333;
+}
+
+.light .works-list li a,
+.light .works-list li button {
+  background-color: rgb(0, 124, 237);
+  border: 3px solid #333;
+}
+
+.light .contact-buttons li a {
+  background-color: #acacac;
+  color: #222;
+  border: 3px solid #333;
+}
+
+@media (max-width: 1320px) {
+  nav,
+  .about-me,
+  .portfolio,
+  .contacts,
+  .footer-container {
+    width: 1000px;
+  }
+  .autobio,
+  .skills {
+    width: 960px;
+  }
+}
+@media (max-width: 1100px) {
+  nav,
+  .about-me,
+  .portfolio,
+  .contacts,
+  .footer-container {
+    width: 760px;
+  }
+  .autobio,
+  .skills {
+    width: 720px;
+  }
+}
+@media (max-width: 1100px) {
+  nav,
+  .about-me,
+  .portfolio,
+  .contacts,
+  .footer-container {
+    width: 760px;
+  }
+  .autobio,
+  .skills {
+    width: 720px;
+  }
+  .main {
+    width: 720px;
+    justify-content: center;
+  }
+  .main-buttons {
+    justify-content: center;
+  }
+  .main-text {
+    text-align: center;
+  }
+}
+@media (max-width: 760px) {
+  nav,
+  .about-me,
+  .portfolio,
+  .contacts,
+  .footer-container {
+    width: 520px;
+  }
+  .autobio,
+  .skills {
+    width: 490px;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .main {
+    width: 490px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

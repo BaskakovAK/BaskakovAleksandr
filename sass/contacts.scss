@@ -1,0 +1,122 @@
+.contacts {
+  margin: 0 auto 80px auto;
+  width: 1300px;
+}
+
+.contacts ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #d5d5d5;
+  color: #d5d5d5;
+  text-decoration: none;
+  background-color: #333;
+  border-radius: 30px;
+  height: 40px;
+  width: 150px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.contact-buttons a img {
+  margin-right: 5px;
+}
+
+.contact-buttons .tw:hover {
+  border: 3px solid #1da1f2;
+  opacity: 0.7;
+}
+
+.contact-buttons .tw:active {
+  opacity: 0.5;
+}
+
+.contact-buttons .ig:hover {
+  border: 3px solid #9339c1;
+  opacity: 0.7;
+}
+
+.contact-buttons .ig:active {
+  opacity: 0.5;
+}
+
+.contact-buttons .vk:hover {
+  border: 3px solid #4d76a1;
+  opacity: 0.7;
+}
+
+.contact-buttons .vk:active {
+  opacity: 0.5;
+}
+
+.contact-buttons .li:hover {
+  border: 3px solid #0274b3;
+  opacity: 0.7;
+}
+
+.contact-buttons .li:active {
+  opacity: 0.5;
+}
+
+.contact-buttons .gh:hover {
+  border: 3px solid #000;
+  opacity: 0.7;
+}
+
+.contact-buttons .gh:active {
+  opacity: 0.5;
+}
+
+.contact-buttons .tg:hover {
+  border: 3px solid #30a7de;
+  opacity: 0.7;
+}
+
+.contact-buttons .tg:active {
+  opacity: 0.5;
+}
+
+.contact-buttons .wa:hover {
+  border: 3px solid #40c351;
+  opacity: 0.7;
+}
+
+.contact-buttons .wa:active {
+  opacity: 0.5;
+}
+
+footer {
+  width: 100%;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer-container {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container a {
+  text-decoration: none;
+  color: #d5d5d5;
+  font-style: italic;
+}
+
+.footer-container a:hover {
+  opacity: 0.7;
+}
+
+.footer-container a:active {
+  opacity: 0.5;
+}

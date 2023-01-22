@@ -1,0 +1,76 @@
+.about-me {
+  width: 1300px;
+  margin: 0 auto 80px auto;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.autobio {
+  width: 590px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.skills {
+  width: 590px;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
+  list-style: none;
+  background-color: #333;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.skills h3 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 5px;
+}
+
+.skills li {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar {
+  border: 2px solid #333;
+  box-shadow: 0 0 0 1px rgba(0, 124, 237, 1);
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 350px;
+  height: 20px;
+  padding-left: 2px;
+  display: flex;
+  justify-content: start;
+}
+
+.html {
+  background-color: rgba(0, 124, 237, 1);
+}
+
+.css {
+  background: linear-gradient(to right, rgba(0, 124, 237, 1) 80%, #333 80%);
+}
+
+.js {
+  background: linear-gradient(to right, rgba(0, 124, 237, 1) 70%, #333 70%);
+}
+
+.av {
+  background: linear-gradient(to right, rgba(0, 124, 237, 1) 40%, #333 40%);
+}
+
+.fw {
+  background: linear-gradient(to right, rgba(0, 124, 237, 1) 30%, #333 30%);
+}
