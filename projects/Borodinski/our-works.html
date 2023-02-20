@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <title>Барбершоп "Бородинский"</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo page-header__logo--our-works">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" />
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" />
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg"
+          width="226" height="30" alt="Барбершоп "Бородинский"">
+        </picture>
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Наши работы</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Записаться</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__login" href="#"
+                ><svg
+                  class="user-list__login-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.3">
+                    <path d="M7 2H14V14H7V16H16V0H7V2Z" fill="white" />
+                    <path d="M7 9H0V7H7V4L11 8L7 12V9Z" fill="white" />
+                  </g>
+                </svg>
+                Войти</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <header class="works__header">
+        <h1 class="works__title">Наши работы</h1>
+        <a href="index.html" class="works__to-home button">На главную</a>
+      </header>
+      <section class="works__main">
+        <div class="main__wrapper">
+          <ul class="works__works-list">
+            <li class="works-list__item works-list__item--work-of-month">
+              <div class="works-list__item__image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="img/photo-1-desktop.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/photo-1-tablet.jpg" />
+                  <img
+                    class="works-list__image"
+                    src="img/photo-1-mobile.jpg"
+                    width="280"
+                    height="480"
+                    alt="Фото работы" />
+                </picture>
+              </div>
+              <div class="works-list__flex-wrapper">
+                <blockquote class="works-list__text-wrapper">
+                  <cite class="works-list__customer-name"
+                    >Лжепётр Мчиславский</cite
+                  >
+                  <p class="works-list__customer-review">
+                    Где я только не стригся, но так как делаете это вы — не
+                    умеет никто другой! Еще раз спасибо и до скорого!
+                  </p>
+                </blockquote>
+                <ul class="works-list__tag-list">
+                  <li class="works-list__tag-item works-list__tag-item--hair">
+                    <div class="tag-item__icon"></div>
+                    <p class="tag-item__text">Стрижка</p>
+                  </li>
+                  <li class="works-list__tag-item works-list__tag-item--shave">
+                    <div class="tag-item__icon"></div>
+                    <p class="tag-item__text">Бритье</p>
+                  </li>
+                  <li
+                    class="works-list__tag-item works-list__tag-item--mustache">
+                    <div class="tag-item__icon"></div>
+                    <p class="tag-item__text">Усы</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="works-list__item">
+              <div class="works-list__item__image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="img/photo-2-desktop.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/photo-2-tablet.jpg" />
+                  <img
+                    class="works-list__image"
+                    src="img/photo-2-mobile.jpg"
+                    width="280"
+                    height="176"
+                    alt="Фото работы" />
+                </picture>
+              </div>
+              <div class="works-list__flex-wrapper">
+                <blockquote class="works-list__text-wrapper">
+                  <cite class="works-list__customer-name">Саша Мальцев</cite>
+                  <p class="works-list__customer-review">
+                    Попросил омолодить и омолодили! Кто теперь скажет, что мне
+                    45?
+                  </p>
+                </blockquote>
+                <ul class="works-list__tag-list">
+                  <li class="works-list__tag-item works-list__tag-item--hair">
+                    <div class="tag-item__icon"></div>
+                    <p class="tag-item__text">Стрижка</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="works-list__item">
+              <div class="works-list__item__image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="img/photo-3-desktop.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/photo-3-tablet.jpg" />
+                  <img
+                    class="works-list__image"
+                    src="img/photo-3-desktop.jpg"
+                    width="280"
+                    height="176"
+                    alt="Фото работы" />
+                </picture>
+              </div>
+              <div class="works-list__flex-wrapper">
+                <blockquote class="works-list__text-wrapper">
+                  <cite class="works-list__customer-name">Владимир Иваныч</cite>
+                  <p class="works-list__customer-review">
+                    К зимнему сезону — готов!
+                  </p>
+                </blockquote>
+                <ul class="works-list__tag-list">
+                  <li class="works-list__tag-item works-list__tag-item--shave">
+                    <div class="tag-item__icon"></div>
+                    <p class="tag-item__text">Борода</p>
+                  </li>
+                  <li
+                    class="works-list__tag-item works-list__tag-item--mustache">
+                    <div class="tag-item__icon"></div>
+                    <p class="tag-item__text">Усы</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="works-list__item">
+              <div class="works-list__item__image-wrapper">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="img/photo-4-desktop.jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="img/photo-4-desktop.jpg" />
+                  <img
+                    class="works-list__image"
+                    src="img/photo-4-mobile.jpg"
+                    width="280"
+                    height="176"
+                    alt="Фото работы" />
+                </picture>
+              </div>
+              <div class="works-list__flex-wrapper">
+                <blockquote class="works-list__text-wrapper">
+                  <cite class="works-list__customer-name">Винстон Синий</cite>
+                  <p class="works-list__customer-review">
+                    Как только зарастаю и волосы начинают мешать видеть — бегом
+                    в Бородинский!
+                  </p>
+                </blockquote>
+                <ul class="works-list__tag-list">
+                  <li class="works-list__tag-item works-list__tag-item--hair">
+                    <div class="tag-item__icon"></div>
+                    <p class="tag-item__text">Стрижка</p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="works__price">
+        <h2 class="price__title">Прейскурант</h2>
+        <div class="price__wrapper">
+          <ul class="price__service-list">
+            <li class="price__service-item">
+              <div class="service-item__number-of-item">1</div>
+              <div class="service-item__text-wrapper">
+                <p class="service-item__hair-name">Классическая стрижка</p>
+                <p class="service-item__hair-description">
+                  <span>(</span>с мытьём головы<span>)</span>
+                </p>
+              </div>
+              <p class="service-item__price">1 500 руб.</p>
+            </li>
+            <li class="price__service-item">
+              <div class="service-item__number-of-item">2</div>
+              <div class="service-item__text-wrapper">
+                <p class="service-item__hair-name">Современный вариант</p>
+                <p class="service-item__hair-description">
+                  <span>(</span>с мытьём головы<span>)</span>
+                </p>
+              </div>
+              <p class="service-item__price">1 500 руб.</p>
+            </li>
+            <li class="price__service-item">
+              <div class="service-item__number-of-item">3</div>
+              <div class="service-item__text-wrapper">
+                <p class="service-item__hair-name">Индивидуальный подход</p>
+                <p class="service-item__hair-description">
+                  <span>(</span>с мытьём головы<span>)</span>
+                </p>
+              </div>
+              <p class="service-item__price">2 000 руб.</p>
+            </li>
+            <li class="price__service-item">
+              <div class="service-item__number-of-item">4</div>
+              <div class="service-item__text-wrapper">
+                <p class="service-item__hair-name">Бритьё головы</p>
+                <p class="service-item__hair-description">
+                  <span>(</span>без мытья<span>)</span>
+                </p>
+              </div>
+              <p class="service-item__price">500 руб.</p>
+            </li>
+            <li class="price__service-item">
+              <div class="service-item__number-of-item">5</div>
+              <div class="service-item__text-wrapper">
+                <p class="service-item__hair-name">Бритьё головы</p>
+                <p class="service-item__hair-description">
+                  <span>(</span>с мытьём головы<span>)</span>
+                </p>
+              </div>
+              <p class="service-item__price">1 000 руб.</p>
+            </li>
+          </ul>
+          <p class="price__office-hours">C 10:00 до 14:00 скидка 20%</p>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__title">Барбершоп Бородинский</b>
+          <p class="contacts__text">
+            г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+          </p>
+          <a class="contacts__phone" href="tel:+78125556666"
+            ><p>Тел.:</p>
+            +7 (812) 555-66-66</a
+          >
+        </div>
+        <div class="page-footer__social social">
+          <b class="social__title">Давайте дружить!</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#"
+                >Мы в Вконтакте</a
+              >
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#"
+                >Мы в Фейсбуке</a
+              >
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ig" href="#"
+                >Мы в Инстаграме</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Дизайн:</b>
+          <a class="button copyright__link" href="#">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/nav.js"></script>
+  </body>
+</html>

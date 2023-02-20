@@ -1,0 +1,133 @@
+.adventages {
+  background-color: #353535;
+  margin: 0;
+  background-image: url("../img/angle.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/angle big.svg");
+  }
+}
+
+.adventages__wrapper {
+  color: #ffffff;
+  padding: 40px 20px 46px 20px;
+  max-width: 500px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 570px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+    padding: 77px 0 106px 0;
+  }
+}
+
+.adventages__list {
+  margin: auto;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 104px;
+  }
+}
+
+.adventages__item {
+  padding-top: 125px;
+  background-repeat: no-repeat;
+  background-size: 95px;
+  background-position: center 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid rgba(#ffffff, 10%);
+    padding: 42px 0 42px 129px;
+    background-position-y: 42px;
+    background-position-x: 0;
+    max-width: 568px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+    padding-top: 125px;
+    background-position: center 0;
+  }
+}
+
+.adventages__item--fast {
+  background-image: url("../img/advantage-1-icon.svg");
+}
+
+.adventages__item--cool {
+  display: none;
+  background-image: url("../img/advantage-2-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.adventages__item--price {
+  display: none;
+  background-image: url("../img/advantage-3-icon.svg");
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    border: none;
+  }
+}
+
+.adventages__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
+.adventages__description {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.adventages__toggles {
+  text-align: center;
+  margin: 30px auto 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.adventages__toggles .slider__toggle {
+  background-image: url("../img/slider indicator.svg");
+}
+
+.adventages__toggles .slider__toggle.active {
+  background-image: url("../img/current slider.svg");
+}

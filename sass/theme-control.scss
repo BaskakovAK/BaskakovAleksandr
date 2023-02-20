@@ -1,0 +1,56 @@
+.page.light {
+  background-color: #d5d5d5;
+  color: #222222;
+}
+
+.light a {
+  color: #222222;
+}
+
+.light .button {
+  background-color: #c5c5c5;
+}
+
+.light .intro__button:last-child {
+  border: 2px solid #333333;
+  @media (min-width: $desktop-width) {
+    border: 3px solid #333333;
+  }
+}
+
+.light .intro__avatar {
+  border: 10px solid #c5c5c5;
+}
+
+.light .intro__position {
+  color: #606060;
+}
+
+.light .about-me__skills-list {
+  background-color: #c5c5c5;
+}
+
+.light .about-me__background-wrapper {
+  background-color: #c5c5c5;
+}
+
+.light .portfolio__item {
+  box-shadow: inset 0 -100px 80px 0 #d5d5d5, 0 5px 5px rgba(0, 0, 0, 0.5);
+  border: 3px solid #c5c5c5;
+}
+
+.light .portfolio__fun-projects {
+  background-color: #d5d5d5;
+}
+
+.light .portfolio__close-button {
+  background-image: url("../img/cross-16-dark.svg");
+}
+
+.light .contacts__button {
+  border: 2px solid #333333;
+
+  @media (min-width: $desktop-width) {
+    border: 3px solid #333333;
+  }
+}

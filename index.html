@@ -4,204 +4,197 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/adaptive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <title>Aleksandr Baskakov</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <p class="logo">
-          <img
-            class="logo-img"
+  <body class="page">
+    <header class="page__header" id="page__header">
+      <div class="wrapper header__header-wrapper">
+        <a class="header__logo"
+          ><img
+            class="logo__image"
+            height="50px"
             src="img/logo.png"
-            alt="logo"
-            width="160"
-            height="50"
-          />
-        </p>
-        <ul class="menu">
-          <li><a href="#main">Home</a></li>
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contacts">Contacts</a></li>
-        </ul>
-        <ul class="theme-switch">
-          <li><button class="light-theme" type="button"></button></li>
-          <li><button class="dark-theme active" type="button"></button></li>
-          <li><a href="index-ru.html" class="lang">En</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="main" id="main">
-        <img
-          class="avatar"
-          src="img/avatar.png"
-          alt="avatar"
-          width="400"
-          height="400"
-        />
-        <div class="main-text">
-          <h1>Frontend developer</h1>
-          <h2>Aleksandr Baskakov</h2>
-          <p>
-            Hi! I'm Aleksandr. I am a beginner web developer. I create websites
-            based on your mockups. My skills so far are modest. But if you need
-            a simple landing, then I can do it. :)
-          </p>
-          <div class="main-buttons">
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contacts">Contacts</a>
-          </div>
-        </div>
-      </section>
-      <section class="about-me" id="about-me">
-        <h2>About me</h2>
-        <div class="about-me-container">
-          <div class="autobio">
-            <p>
-              In one day I packed my things, bought a plane ticket and flew to
-              Yerevan, Armenia. I always dreamed of doing development, but only
-              now, when I radically changed my life, I was able to give up
-              working in retail and do what I always wanted to do.
-            </p>
-            <p>My name is Aleksandr, I'm 25.</p>
-          </div>
-          <ul class="skills">
+            alt="Logotype"
+        /></a>
+        <div class="header__flex-wrapper">
+          <nav class="header__nav">
+            <ul class="nav-list">
+              <li class="nav-item"><a href="#page__header">Home</a></li>
+              <li class="nav-item"><a href="#main__about-me">About me</a></li>
+              <li class="nav-item"><a href="#main__portfolio">Portfolio</a></li>
+              <li class="nav-item"><a href="#main__contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <ul class="header__toggles">
             <li>
-              <h3>HTML:</h3>
-              <div class="progress-bar html"></div>
+              <button class="toggle__theme dark" type="button">
+                Change theme
+              </button>
             </li>
             <li>
-              <h3>CSS:</h3>
-              <div class="progress-bar css"></div>
-            </li>
-            <li>
-              <h3>JavaScript:</h3>
-              <div class="progress-bar js"></div>
-            </li>
-            <li>
-              <h3>Adaptive:</h3>
-              <div class="progress-bar av"></div>
-            </li>
-            <li>
-              <h3>Libraries and frameworks:</h3>
-              <div class="progress-bar fw"></div>
+              <button class="toggle__language" type="button">En</button>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <ul class="works-list">
-          <li>
-            <img src="img/Collector.png" alt="Project screenshot" width="305" />
-            <div>
-              <h3>Fun projects</h3>
-
-              <p>Little projects made for fun.</p>
-              <button type="button" class="fun-projects--open-button">
-                Open
-              </button>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img
-                src="img/sail-club.png"
-                alt="Project screenshot"
-                width="305"
-              />
-            </div>
-            <h3>Sail club</h3>
-
-            <p>
-              My first project with JS. The user has the ability to choose a
-              theme, font and more.
+      </div>
+    </header>
+    <main class="page__main">
+      <h1 class="visually-hidden">Baskakov Aleksandr Frontend developer</h1>
+      <section class="main__intro">
+        <div class="wrapper intro__wrapper">
+          <img
+            class="intro__avatar"
+            src="img/avatar.png"
+            width="200px"
+            height="200px"
+            alt="Photo of Aleksandr" />
+          <div class="intro__text-wrapper">
+            <p class="intro__position">Frontend developer</p>
+            <p class="intro__name">Aleksandr Baskakov</p>
+            <p class="intro__text">
+              Hi! I'm Aleksandr. I am a beginner web developer. I create
+              websites based on your mockups. if you need a simple landing or
+              basic web site, i can do that!
             </p>
-            <a href="sail-club-new/index.html" target="_blank">Open</a>
-          </li>
-        </ul>
-        <div class="fun-projects">
-          <h3>Fun projects</h3>
-          <button type="button" class="fun-projects--close-button"></button>
-          <ul class="works-list">
-            <li>
-              <img
-                src="img/Collector.png"
-                alt="Project screenshot"
-                width="305"
-              />
-              <div>
-                <h3>The Collector</h3>
-
-                <p>A simple game about a hedgehog picking apples.</p>
-                <a href="collector/index.html" target="_blank">Open</a>
+            <div class="intro__button-wrapper">
+              <a class="button intro__button" href="#main__portfolio"
+                >Portfolio</a
+              >
+              <a class="button intro__button" href="#main__contacts"
+                >Contacts</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__about-me" id="main__about-me">
+        <div class="wrapper about-me__wrapper">
+          <div class="about-me__text-wrapper">
+            <h2 class="title about-me__title--about-me">About me</h2>
+            <div class="about-me__background-wrapper">
+              <p>
+                In one day I packed my things, bought a plane ticket and flew to
+                Yerevan, Armenia. I always dreamed of doing development, but
+                only now, when I radically changed my life, I was able to give
+                up working in retail and do what I always wanted to do.
+              </p>
+              <p>My name is Aleksandr, I'm 25.</p>
+            </div>
+          </div>
+          <div class="about-me__skills-wrapper">
+            <h2 class="title about-me__title about-me__title--skills">
+              Skills list
+            </h2>
+            <ul class="about-me__skills-list">
+              <li class="skills-item">HTML5</li>
+              <li class="skills-item">CSS3</li>
+              <li class="skills-item">JavaScript</li>
+              <li class="skills-item">Sass</li>
+              <li class="skills-item">Git</li>
+              <li class="skills-item">BEM</li>
+              <li class="skills-item">Adaptability</li>
+              <li class="skills-item">Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="main__portfolio" id="main__portfolio">
+        <div class="wrapper portfolio-wrapper">
+          <h2 class="title portfolio__title">Portfolio</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item fun-project">
+              <div class="item__position_wrapper">
+                <h3 class="portfolio-item__title">Fun projects</h3>
+                <a
+                  class="button portfolio__open-button fun-projects--open"
+                  href="#"
+                  >Open</a
+                >
+              </div>
+            </li>
+            <li class="portfolio__item yacht-club">
+              <div class="item__position_wrapper">
+                <h3 class="portfolio-item__title">Yacht club</h3>
+                <a
+                  class="button portfolio__open-button yacht-club--open"
+                  href="projects/yacht club/index.html"
+                  target="_blank"
+                  >Open</a
+                >
+              </div>
+            </li>
+            <li class="portfolio__item borodinski">
+              <div class="item__position_wrapper">
+                <h3 class="portfolio-item__title">Borodinski</h3>
+                <a
+                  class="button portfolio__open-button borodinski--open"
+                  href="projects/Borodinski/index.html"
+                  target="_blank"
+                  >Open</a
+                >
               </div>
             </li>
           </ul>
+          <div class="portfolio__funprojects-modal-wrapper closed">
+            <div class="portfolio__fun-projects">
+              <h2 class="portfolio__fun-project-title">Fun projects</h2>
+              <button class="portfolio__close-button" type="button">
+                Close
+              </button>
+              <ul class="portfolio__fun-project-list">
+                <li class="portfolio__item collector">
+                  <div class="item__position_wrapper">
+                    <h3 class="portfolio-item__title">Collector</h3>
+                    <a
+                      class="button portfolio__open-button collector--open"
+                      href="projects/collector/index.html"
+                      target="_blank"
+                      >Open</a
+                    >
+                  </div>
+                </li>
+                <li class="portfolio__item calorie-counter">
+                  <div class="item__position_wrapper">
+                    <h3 class="portfolio-item__title">Сalorie counter</h3>
+                    <a
+                      class="button portfolio__open-button calorie-counter--open"
+                      href="projects/calorie counter/index.html"
+                      target="_blank"
+                      >Open</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="contacts" id="contacts">
-        <h2>Contacts</h2>
-        <ul class="contact-buttons">
-          <li>
-            <a
-              href="https://www.instagram.com/othersanchez/"
-              class="ig"
-              target="_blank"
-              ><img src="img/ig icon.webp" width="16" height="16" />
-              Instagram</a
-            >
-          </li>
-          <li>
-            <a href="https://vk.com/othersanchez" class="vk" target="_blank"
-              ><img src="img/vk.png" width="16" height="16" />VK</a
-            >
-          </li>
-          <li>
-            <a href="#" class="li" target="_blank"
-              ><img src="img/LinkedIn.png" width="16" height="16" />Linkedin</a
-            >
-          </li>
-          <li>
-            <a href="#" class="tw" target="_blank"
-              ><img src="img/twi.png" width="16" height="16" />Twitter</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/BaskakovAK" class="gh" target="_blank"
-              ><img src="img/git.png" width="16" height="16" />GitHub</a
-            >
-          </li>
-          <li>
-            <a href="https://t.me/othersanchez" class="tg" target="_blank"
-              ><img
-                src="img/Telegram_logo.png"
-                width="16"
-                height="16"
-              />Telegram</a
-            >
-          </li>
-          <li>
-            <a href="https://wa.me/79531448340" class="wa" target="_blank"
-              ><img src="img/wa.png" width="16" height="16" />WhatsApp</a
-            >
-          </li>
-        </ul>
+      <section class="main__contacts" id="main__contacts">
+        <div class="wrapper contacts-wrapper">
+          <h2 class="title contacts__title">Contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="button contacts__button gh" href="#">Github</a>
+            </li>
+            <li class="contacts__item">
+              <a class="button contacts__button tg" href="#">Telegram</a>
+            </li>
+            <li class="contacts__item">
+              <a class="button contacts__button wa" href="#">WhatsApp</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="footer-container">
-        <a href="mailto:baskakov.aleksandr@internet.ru"
-          >baskakov.aleksandr@internet.ru</a
-        >
-        <p>&copy; 2023 Baskakov Aleksandr</p>
+    <footer class="page__footer">
+      <div class="wrapper footer-wrapper">
+        <a class="footer__email" href="#">baskakov.aleksandr@internet.ru</a>
+        <p class="footer__copyright">© 2023 Baskakov Aleksandr</p>
       </div>
     </footer>
-    <script src="theme.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/theme-lang-control.js"></script>
   </body>
 </html>

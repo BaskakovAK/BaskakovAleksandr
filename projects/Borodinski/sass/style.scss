@@ -1,0 +1,12 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
+@import "basic.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "index_stats.scss";
+@import "index_adventages.scss";
+@import "index_news.scss";
+@import "index_reviews.scss";
+@import "works_works.scss";

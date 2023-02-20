@@ -1,8 +1,12 @@
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
 @import "basic.scss";
 @import "header.scss";
-@import "main.scss";
+@import "intro.scss";
 @import "about-me.scss";
 @import "portfolio.scss";
 @import "contacts.scss";
-@import "theme.scss";
-@import "adaptive.scss";
+@import "footer.scss";
+@import "theme-control.scss";

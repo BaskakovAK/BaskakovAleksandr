@@ -1,76 +1,69 @@
-.about-me {
-  width: 1300px;
-  margin: 0 auto 80px auto;
+.about-me__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.about-me-container {
+.about-me__text-wrapper {
+  margin-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    width: 48%;
+  }
+}
+
+.about-me__background-wrapper {
+  background-color: #333;
+  transition: background-color, 0.4s;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+  @media (min-width: $desktop-width) {
+    padding: 25px;
+  }
+}
+
+.about-me__background-wrapper p:first-child {
+  margin-top: 0;
+}
+
+.about-me__background-wrapper p:last-child {
+  margin-bottom: 0;
+}
+
+.about-me__skills-wrapper {
+  margin-bottom: 60px;
+
+  @media (min-width: $desktop-width) {
+    width: 48%;
+  }
+}
+
+.about-me__skills-list {
+  background-color: #333333;
+  transition: background-color, 0.4s;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-}
-
-.autobio {
-  width: 590px;
-  background-color: #333;
-  padding: 20px;
-  border-radius: 25px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
-}
-
-.skills {
-  width: 590px;
-  margin: 0;
-  padding: 0;
-  padding: 20px;
-  list-style: none;
-  background-color: #333;
-  border-radius: 25px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-.skills h3 {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 5px;
-}
-
-.skills li {
-  display: flex;
-  justify-content: end;
-  align-items: center;
   gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding: 25px;
+  }
 }
 
-.progress-bar {
-  border: 2px solid #333;
-  box-shadow: 0 0 0 1px rgba(0, 124, 237, 1);
-  box-sizing: border-box;
-  border-radius: 10px;
-  width: 350px;
-  height: 20px;
-  padding-left: 2px;
-  display: flex;
-  justify-content: start;
-}
+.skills-item {
+  padding: 5px 10px;
+  border-radius: 200px;
+  border: 2px solid rgba(0, 124, 237, 1);
 
-.html {
-  background-color: rgba(0, 124, 237, 1);
-}
-
-.css {
-  background: linear-gradient(to right, rgba(0, 124, 237, 1) 80%, #333 80%);
-}
-
-.js {
-  background: linear-gradient(to right, rgba(0, 124, 237, 1) 70%, #333 70%);
-}
-
-.av {
-  background: linear-gradient(to right, rgba(0, 124, 237, 1) 40%, #333 40%);
-}
-
-.fw {
-  background: linear-gradient(to right, rgba(0, 124, 237, 1) 30%, #333 30%);
+  @media (min-width: $desktop-width) {
+    padding: 5px 15px;
+    border: 3px solid rgba(0, 124, 237, 1);
+  }
 }
