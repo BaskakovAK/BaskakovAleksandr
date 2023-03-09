@@ -1,0 +1,381 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: bold;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/PlayfairDisplay-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: bold;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+li,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.wrapper,
+.our-story__wrapper,
+.ottica__wrapper,
+.contact-us__wrapper,
+.page-footer__wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.page-header {
+  width: 100%;
+  height: 93px;
+  background-color: #eff1ed;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navigation__list {
+  width: 879px;
+  margin: auto;
+  padding-top: 16px;
+  height: 61px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__link {
+  height: 61px;
+}
+
+.navigation__item:first-child .navigation__link {
+  color: #d36060;
+  text-decoration: underline;
+}
+
+.navigation__item:last-child .navigation__link {
+  background-color: #505a5b;
+  border-radius: 8px;
+  color: #e8ebe4;
+  padding: 16px 32px;
+}
+
+@keyframes bg-scale {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 110%;
+  }
+}
+
+.hero {
+  width: 98.6vw;
+  height: 931px;
+  margin: 0;
+  padding: 0;
+  padding: 1px;
+  overflow: hidden;
+
+  background-image: url("../img/hero_image.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  animation: bg-scale;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.hero__text-wrapper {
+  color: #eff1ed;
+  width: 400px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 160px;
+}
+
+.hero__title {
+  font-size: 120px;
+  line-height: 156px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero__description {
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0;
+  padding: 0;
+}
+
+.our-story__wrapper {
+  display: flex;
+  gap: 119px;
+
+  padding: 156px 0 120px 0;
+}
+
+.our-story__image {
+  border-radius: 15px;
+}
+
+.our-story__text-wrapper {
+  width: 476px;
+}
+
+.our-story__sub-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.our-story__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 73px;
+}
+
+.our-story__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.ottica {
+  background-color: #505a5b;
+  padding: 80px 0;
+}
+
+.ottica__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ottica__text-wrapper {
+  color: #eff1ed;
+  width: 476px;
+  margin-bottom: 120px;
+}
+
+.ottica__sub-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.ottica__title {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 73px;
+}
+
+.ottica__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.ottica__image {
+  border-radius: 15px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.our-brands__wrapper {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: center;
+  color: #eff1ed;
+  width: 838px;
+  margin: auto;
+  margin-top: 120px;
+}
+
+.our-brands__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-us {
+  padding: 120px 0;
+}
+
+.contact-us__text-wrapper {
+  width: 575px;
+  margin: auto;
+}
+
+.contact-us__sub-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contact-us__title {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 73px;
+}
+
+.contact-us__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.contact-us__link {
+  color: #e8ebe4;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  background-color: #505a5b;
+  text-align: center;
+  padding: 16px 32px;
+  border-radius: 8px;
+  margin-top: 40px;
+  box-sizing: border-box;
+
+  display: block;
+  width: 270px;
+  height: 61px;
+}
+
+.page-footer {
+  background-color: #505a5b;
+  color: #e8ebe4;
+  padding: 80px 0 40px 0;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.page-footer-nav__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #e8ebe4;
+}
+
+.coryright {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.page-footer__worktime-wrapper {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  width: 277px;
+}
+
+.page-footer__worktime-wrapper p:first-child {
+  font-weight: 700;
+}
+
+.page-footer__addres-wrapper {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.page-footer__addres-wrapper p:first-child {
+  font-weight: 700;
+}
+
+.page-footer__addres-wrapper a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #e8ebe4;
+  text-decoration: underline;
+}

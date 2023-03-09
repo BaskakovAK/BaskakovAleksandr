@@ -49,10 +49,14 @@ langButton.addEventListener("click", function () {
     document.querySelector(
       ".about-me__background-wrapper p:last-child"
     ).textContent = "Меня зовут Александр, мне 25.";
-    document.querySelector(".skills-item:nth-child(6)").textContent = "БЭМ";
-    document.querySelector(".skills-item:nth-child(7)").textContent =
-      "Адаптивность";
+    document.querySelector(".skills-item:nth-child(4)").textContent =
+      "СSS анимации";
+    document.querySelector(".skills-item:nth-child(7)").textContent = "БЭМ";
     document.querySelector(".skills-item:nth-child(8)").textContent =
+      "Семантическая верстка";
+    document.querySelector(".skills-item:nth-child(9)").textContent =
+      "Адаптивность";
+    document.querySelector(".skills-item:nth-child(10)").textContent =
       "Доступность";
     document.querySelector(".portfolio__title").textContent = "Портфолио";
     document.querySelector(".fun-projects--open").textContent = "Открыть";
@@ -92,10 +96,14 @@ langButton.addEventListener("click", function () {
     document.querySelector(
       ".about-me__background-wrapper p:last-child"
     ).textContent = "My name is Aleksandr, I'm 25.";
-    document.querySelector(".skills-item:nth-child(6)").textContent = "BEM";
-    document.querySelector(".skills-item:nth-child(7)").textContent =
-      "Adaptability";
+    document.querySelector(".skills-item:nth-child(4)").textContent =
+      "СSS animation";
+    document.querySelector(".skills-item:nth-child(7)").textContent = "BEM";
     document.querySelector(".skills-item:nth-child(8)").textContent =
+      "Semantic layout";
+    document.querySelector(".skills-item:nth-child(9)").textContent =
+      "Adaptability";
+    document.querySelector(".skills-item:nth-child(10)").textContent =
       "Accessibility";
     document.querySelector(".portfolio__title").textContent = "Portfolio";
     document.querySelector(".fun-projects--open").textContent = "Open";

@@ -542,13 +542,23 @@ button:active {
   background-image: url("../img/screenshots/calorie-counter.jpg");
 }
 
-.portfolio__funprojects-modal-wrapper.closed {
+.portfolio__item.ottica-rubelle {
+  background-image: url("../img/screenshots/ottica-rubelle.jpg");
+}
+
+.portfolio__item.landing-pages {
+  background-image: url("../img/screenshots/landing.jpg");
+}
+
+.portfolio__funprojects-modal-wrapper.closed,
+.portfolio__landing-pages-modal-wrapper.closed {
   visibility: hidden;
   position: absolute;
   top: -1000px;
 }
 
-.portfolio__funprojects-modal-wrapper.opened {
+.portfolio__funprojects-modal-wrapper.opened,
+.portfolio__landing-pages-modal-wrapper.opened {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   padding-top: 100px;
@@ -569,7 +579,8 @@ button:active {
   overflow-y: auto;
 }
 
-.portfolio__fun-projects {
+.portfolio__fun-projects,
+.portfolio__landing-pages {
   display: block;
   position: relative;
   background-color: #222222;
@@ -581,29 +592,34 @@ button:active {
   transform: scale(1);
 }
 @media (min-width: 768px) {
-  .portfolio__fun-projects {
+  .portfolio__fun-projects,
+  .portfolio__landing-pages {
     padding: 30px 20px 30px 20px;
     max-width: 640px;
   }
 }
 @media (min-width: 1200px) {
-  .portfolio__fun-projects {
+  .portfolio__fun-projects,
+  .portfolio__landing-pages {
     max-width: 960px;
   }
 }
 
-.portfolio__fun-project-title {
+.portfolio__fun-project-title,
+.portfolio__landing-pages-title {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.portfolio__fun-project-list {
+.portfolio__fun-project-list,
+.portfolio__landing-pages-list {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-.portfolio__close-button {
+.portfolio__close-button,
+.portfolio__landing-pages-close-button {
   position: absolute;
   top: 20px;
   right: 20px;
